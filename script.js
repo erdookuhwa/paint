@@ -19,7 +19,7 @@ const context = canvas.getContext('2d');
 
 let currentSize = 10;
 let bucketColor = '#FFFFFF';
-let currentColor = '#A51DAB';
+let currentColor = '#00FFFF';
 let isEraser = false;
 let isMouseDown = false;
 let drawnArray = [];
@@ -119,7 +119,6 @@ function storeDrawn(x, y, size, color, erase) {
     color,
     erase,
   };
-  console.log(line);
   drawnArray.push(line);
 }
 
@@ -164,7 +163,6 @@ canvas.addEventListener('mousemove', (event) => {
 // Mouse Up
 canvas.addEventListener('mouseup', () => {
   isMouseDown = false;
-  console.log('mouse is unclicked');
 });
 
 // Save to Local Storage
